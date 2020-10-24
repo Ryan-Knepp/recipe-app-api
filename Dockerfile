@@ -2,8 +2,8 @@ FROM python:3.9-alpine
 
 ENV PYTHONUNBUFFERED 1
 
-COPY ./req.txt /req.txt
-RUN pip install -r /req.txt
+COPY ./requirements.txt /requirements.txt
+RUN pip install -r /requirements.txt
 
 RUN mkdir /app
 WORKDIR /app
